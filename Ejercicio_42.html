@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Nacional de Identidad </title>
+    <style>
+        body{
+            width: 80%;
+            background-color:black;
+            color:white;
+            text-align:center;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Letra del DNI</h2>
+
+
+    <p>
+        Supongamos que dado un número de Documento Nacional de Identidad (DNI), 
+        un programa debe calcular por medio de un proceso matemático sencillo,
+         una letra, que se basa en obtener el resto de la división entera del número de DNI y el número 23.
+          A partir del resto de la división, se obtiene la letra seleccionándola dentro de un array de letras.
+           El array de letras es ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+            por lo que si el resto de la división es 0, la letra del DNI es la T y si el resto es 3 la letra es la A. 
+            Con estos datos, elaborar un programa HTML que pida al usuario un número de DNI y su letra. Luego en un programa PHP 
+            se debe comprobar si el número es menor que 0 o mayor que 99999999. Si ese es el caso,
+             se muestra un mensaje al usuario indicando que el número proporcionado no es válido y 
+             el programa no muestra más mensajes. Si el número es válido, 
+             se calcula la letra que le corresponde según el método explicado anteriormente. 
+             Una vez calculada la letra, se debe comparar con la letra indicada por el usuario.
+              Si no coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es correcta. 
+              En otro caso, se muestra un mensaje indicando que el número y la letra de DNI son correctos.</p>
+    <form action="Ejercicio_42.php" method="get">
+
+
+
+        <label>Ingrese DNI<br><br></label>
+
+        <input type="number" name="dni" placeholder="DNI sugerido 23038622"> <br> <br>
+        <label>Ingrese letra<br> correspondiente<br><br></label>
+        <input type="text" name="words" placeholder="Letra sugerida M"><br> <br>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+
+</html>
